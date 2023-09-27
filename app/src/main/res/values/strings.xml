@@ -170,4 +170,6 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="title_activity_signup_page1">Signup_Page_1</string>
+    <string name="title_activity_signup_page2">Signup_Page_2</string>
 </resources>
