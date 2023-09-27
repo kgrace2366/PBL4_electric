@@ -72,5 +72,9 @@
         <item name="android:textColor">#FFFFFF</item>
     </style>
 
+    <style name="EditTextWithoutUnderline" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@null</item>
+    </style>
+
 
 </resources>

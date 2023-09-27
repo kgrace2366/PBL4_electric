@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Signup_Page_2">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="27.69dp"
+        android:layout_height="30.08dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:elevation="10dp"
+        android:src="@drawable/mini_logo"
+        app:layout_constraintBottom_toTopOf="@+id/rectangle_7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/signup_page"
+        android:layout_width="392dp"
+        android:layout_height="854dp"
+        android:background="#EAE7ED"
+        android:clipToOutline="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"></View>
+
+    <ImageView
+        android:id="@+id/rectangle_7"
+        android:layout_width="387dp"
+        android:layout_height="717dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/signup_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="56dp" />
+
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="104dp"
+        android:layout_height="27.38dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/kimm_bold"
+        android:gravity="top"
+        android:lineHeight="20sp"
+        android:text="@string/signup"
+        android:textAppearance="@style/signup"
+        app:layout_constraintBottom_toTopOf="@+id/rectangle_11"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_7"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_7"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_7"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/signup_ess"
+        android:layout_width="111dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/kimm_bold"
+        android:gravity="top"
+        android:lineHeight="18sp"
+        android:text="@string/signup_ess"
+
+        android:textAppearance="@style/signup_name"
+        app:layout_constraintBottom_toTopOf="@+id/rectangle_11"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.262"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_7"
+        app:layout_constraintTop_toBottomOf="@+id/signup"
+        app:layout_constraintVertical_bias="1.0" />
+
+
+    <TextView
+        android:id="@+id/signup_payment"
+        android:layout_width="123dp"
+        android:layout_height="34dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/kimm_bold"
+        android:gravity="top"
+        android:lineHeight="18sp"
+        android:text="@string/signup_payment"
+        android:textAppearance="@style/signup_name"
+        app:layout_constraintBottom_toTopOf="@+id/rectangle_11_5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.274"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_7"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_11"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+
+    <TextView
+        android:id="@+id/signup_aggrement"
+        android:layout_width="87dp"
+        android:layout_height="32dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="@font/kimm_bold"
+        android:gravity="top"
+        android:lineHeight="18sp"
+        android:text="@string/signup_agreement"
+        android:textAppearance="@style/signup_name"
+        app:layout_constraintBottom_toTopOf="@+id/group_11"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_7"
+        app:layout_constraintHorizontal_bias="0.243"
+        app:layout_constraintStart_toStartOf="@+id/signup_page" />
+
+    <TextView
+        android:id="@+id/signup_payinfo"
+        android:layout_width="130dp"
+        android:layout_height="25dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:elevation="5sp"
+        android:fontFamily="@font/kimm_bold"
+        android:gravity="top"
+        android:lineHeight="18sp"
+        android:text="@string/signup_payinfo"
+        android:textAppearance="@style/signup_name"
+        app:layout_constraintBottom_toTopOf="@+id/rectangle_11_2"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_11_5"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_11_5"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_11_5" />
+
+    <TextView
+        android:id="@+id/signup_paychoi"
+        android:layout_width="109dp"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:elevation="5sp"
+        android:fontFamily="@font/kimm_bold"
+        android:gravity="top"
+        android:lineHeight="18sp"
+        android:text="@string/signup_paychoi"
+        android:textAppearance="@style/speaddr"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_11_2"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_11_2"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_11_2"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_11_2" />
+
+    <TextView
+        android:id="@+id/gosignup"
+        android:layout_width="115dp"
+        android:layout_height="23dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="3dp"
+        android:elevation="5sp"
+        android:fontFamily="@font/kimm_bold"
+        android:gravity="top"
+        android:lineHeight="20sp"
+        android:text="@string/gosignup"
+
+        android:textAppearance="@style/next"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_9"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_9"
+        app:layout_constraintHorizontal_bias="0.596"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_9"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_9"
+        app:layout_constraintVertical_bias="0.529" />
+
+    <TextView
+        android:id="@+id/signup_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/kimm_bold"
+        android:text="@string/signup_login"
+        android:textColor="#1D0251"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_9" />
+
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+
+    <ImageView
+        android:id="@+id/group_11"
+        android:layout_width="245dp"
+        android:layout_height="179dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/agreement_layout"
+        app:layout_constraintBottom_toTopOf="@+id/gosignup"
+        app:layout_constraintEnd_toEndOf="@+id/signup_page"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_7"
+        app:layout_constraintTop_toBottomOf="@+id/signup_paychoi"
+        app:layout_constraintVertical_bias="0.648" />
+
+    <ImageView
+        android:id="@+id/rectangle_11"
+        android:layout_width="239dp"
+        android:layout_height="45.64dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/input_button2"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_7"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_7"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_7"
+        app:layout_constraintTop_toBottomOf="@+id/logo"
+        app:layout_constraintVertical_bias="0.166" />
+
+
+    <ImageView
+        android:id="@+id/rectangle_11_2"
+        android:layout_width="239dp"
+        android:layout_height="45.64dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/input_button2"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_7"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_7"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_7"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_11_5"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+
+    <ImageView
+        android:id="@+id/material_sy"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:clipToOutline="true"
+        android:src="@drawable/see_more"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_11_2"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_11_2"
+        app:layout_constraintStart_toEndOf="@+id/signup_paychoi"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_11_2" />
+
+    <ImageView
+        android:id="@+id/rectangle_11_5"
+        android:layout_width="239dp"
+        android:layout_height="45.64dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/input_button2"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_7"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_7"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_7"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_11"
+        app:layout_constraintVertical_bias="0.103" />
+
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+
+    <ImageButton
+        android:id="@+id/rectangle_9"
+        android:layout_width="239dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/blackblue_input_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.951"
+        tools:layout_editor_absoluteY="747dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
