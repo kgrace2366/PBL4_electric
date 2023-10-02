@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".Profile_Page_2">
+
+    <include layout="@layout/content_profile_page2" />
+
+
+    <FrameLayout
+        android:id="@+id/buy_list_frame"
+        android:layout_width="114dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="260dp"
+        app:layout_constraintBottom_toTopOf="@+id/rectangle_45"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/component_4">
+
+
+        <ImageButton
+            android:id="@+id/buy_list_button"
+            android:layout_width="114dp"
+            android:layout_height="50dp"
+            android:background="#0CFFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/kimm_bold"
+            android:src="@drawable/purple_button"
+            android:text="구매"
+            android:textColor="#1D0251"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="502dp" />
+
+        <TextView
+            android:id="@+id/buy_list_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/kimm_bold"
+            android:text="구매"
+            android:textColor="#1D0251"
+            android:textSize="18sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/sell_list_frame"
+        android:layout_width="114dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="3dp"
+        app:layout_constraintBottom_toTopOf="@+id/rectangle_45"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/buy_list_frame"
+        app:layout_constraintTop_toBottomOf="@+id/component_4">
+
+        <ImageButton
+            android:id="@+id/sell_list_button"
+            android:layout_width="114dp"
+            android:layout_height="match_parent"
+            android:background="#0CFFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/kimm_bold"
+            android:src="@drawable/gray_button"
+            android:text="판매"
+            android:textColor="#1D0251"
+            android:textSize="18sp"
+            tools:layout_editor_absoluteX="150dp"
+            tools:layout_editor_absoluteY="498dp" />
+
+        <TextView
+            android:id="@+id/sell_list_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/kimm_bold"
+            android:text="판매"
+            android:textColor="#1D0251"
+            android:textSize="18sp" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/outstanding_list_frame"
+        android:layout_width="114dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/rectangle_45"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sell_list_frame"
+        app:layout_constraintTop_toBottomOf="@+id/component_4">
+
+        <ImageButton
+            android:id="@+id/outstanding_list_button"
+            android:layout_width="114dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="31dp"
+            android:background="#0CFFFFFF"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="@font/kimm_bold"
+            android:src="@drawable/gray_button"
+            android:text="미체결"
+            android:textColor="#1D0251"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/sell_list_frame"
+            app:layout_constraintTop_toTopOf="@+id/buy_list_frame" />
+
+        <TextView
+            android:id="@+id/outstanding_list_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/kimm_bold"
+            android:text="미체결"
+            android:textColor="#1D0251"
+            android:textSize="18sp" />
+    </FrameLayout>
+
+
+    <ImageView
+        android:id="@+id/component_4"
+        android:layout_width="224dp"
+        android:layout_height="57dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/gray_titlebar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.846"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <TextView
+        android:id="@+id/some_id6"
+        android:layout_width="185dp"
+        android:layout_height="26dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="13dp"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/kimm_bold"
+        android:gravity="top"
+        android:lineHeight="26sp"
+        android:text="@string/some_id6"
+        android:textAppearance="@style/some_id6"
+        app:layout_constraintBottom_toBottomOf="@+id/component_4"
+        app:layout_constraintEnd_toEndOf="@+id/component_4"
+        app:layout_constraintStart_toStartOf="@+id/component_4"
+        app:layout_constraintTop_toTopOf="@+id/component_4" />
+
+
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+
+    <!-- Auto layout, variables, and unit scale are not yet supported -->
+
+    <LinearLayout
+        android:layout_width="343dp"
+        android:layout_height="670dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sell_list_frame">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="642dp"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="337dp"
+                android:layout_height="459dp"
+                android:orientation="vertical"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="163dp">
+
+
+                <View
+                    android:id="@+id/rectangle_45"
+                    android:layout_width="342dp"
+                    android:layout_height="53dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/list"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.627"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.22" />
+
+                <View
+                    android:id="@+id/rectangle_46"
+                    android:layout_width="342dp"
+                    android:layout_height="53dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/list"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.627"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rectangle_45"
+                    app:layout_constraintVertical_bias="0.016" />
+
+                <View
+                    android:id="@+id/rectangle_46_3"
+                    android:layout_width="342dp"
+                    android:layout_height="53dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/list"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.627"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rectangle_45"
+                    app:layout_constraintVertical_bias="0.016" />
+
+                <View
+                    android:id="@+id/rectangle_46_4"
+                    android:layout_width="342dp"
+                    android:layout_height="53dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/list"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.627"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rectangle_45"
+                    app:layout_constraintVertical_bias="0.016" />
+
+                <View
+                    android:id="@+id/rectangle_46_5"
+                    android:layout_width="342dp"
+                    android:layout_height="53dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/list"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.627"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rectangle_45"
+                    app:layout_constraintVertical_bias="0.016" />
+
+                <View
+                    android:id="@+id/rectangle_46_6"
+                    android:layout_width="342dp"
+                    android:layout_height="53dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/list"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.627"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rectangle_45"
+                    app:layout_constraintVertical_bias="0.016" />
+
+                <View
+                    android:id="@+id/rectangle_46_7"
+                    android:layout_width="342dp"
+                    android:layout_height="53dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/list"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.627"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rectangle_45"
+                    app:layout_constraintVertical_bias="0.016" />
+
+                <View
+                    android:id="@+id/rectangle_46_9"
+                    android:layout_width="342dp"
+                    android:layout_height="53dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/list"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.627"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rectangle_45"
+                    app:layout_constraintVertical_bias="0.016" />
+
+                <View
+                    android:id="@+id/rectangle_46_10"
+                    android:layout_width="342dp"
+                    android:layout_height="53dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/list"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.627"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rectangle_45"
+                    app:layout_constraintVertical_bias="0.016" />
+
+                <View
+                    android:id="@+id/rectangle_46_11"
+                    android:layout_width="342dp"
+                    android:layout_height="53dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/list"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.627"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rectangle_45"
+                    app:layout_constraintVertical_bias="0.016" />
+
+                <View
+                    android:id="@+id/rectangle_46_12"
+                    android:layout_width="342dp"
+                    android:layout_height="53dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/list"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.627"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rectangle_45"
+                    app:layout_constraintVertical_bias="0.016" />
+
+                <View
+                    android:id="@+id/rectangle_46_13"
+                    android:layout_width="342dp"
+                    android:layout_height="53dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/list"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.627"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rectangle_45"
+                    app:layout_constraintVertical_bias="0.016" />
+
+                <View
+                    android:id="@+id/rectangle_46_14"
+                    android:layout_width="342dp"
+                    android:layout_height="53dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/list"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.627"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/rectangle_45"
+                    app:layout_constraintVertical_bias="0.016" />
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
