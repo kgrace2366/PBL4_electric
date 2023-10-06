@@ -38,7 +38,7 @@ class Signup_Page_1 : AppCompatActivity() {
             val name = binding.usernameEditText.text.toString() // name 변수의 값을 'usernameEditText' id를 가진 텍스트 박스에 입력 된 문자열로 받아옴
             val Address = binding.addressEditText.text.toString()// Address 변수의 값을 'UserAddressEditText' id를 가진 텍스트 박스에 입력 된 문자열로 받아옴
 
-            if (email.isNotEmpty() || password.isNotEmpty() || name.isNotEmpty() || Address.isNotEmpty()) { // 기입하지 않은 정보가 있을 시
+            if (email.isEmpty() || password.isEmpty() || name.isEmpty() || Address.isEmpty()) { // 기입하지 않은 정보가 있을 시
                 Toast.makeText(this, "정보 중 기입되지 않은 정보가 있습니다.", Toast.LENGTH_SHORT).show() // "정보 중 기입되지 않은 정보가 있습니다." 출력
             }
 
