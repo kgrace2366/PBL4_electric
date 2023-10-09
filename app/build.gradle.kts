@@ -47,7 +47,10 @@ dependencies {
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.3")
     implementation("androidx.navigation:navigation-ui-ktx:2.7.3")
+    implementation ("com.google.android.material:material:1.2.0-alpha02")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
+    implementation ("androidx.legacy:legacy-support-v4:1.0.0") // DrawerLayout
+    implementation ("com.google.android.material:material:1.0.0")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 }
