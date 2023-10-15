@@ -2,7 +2,9 @@ package com.example.myapplication
 
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.Toast
 import android.widget.Toolbar
+import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
@@ -14,35 +16,34 @@ class MainPage : AppCompatActivity() {
     private lateinit var toolbar: Toolbar
     private lateinit var drawerLayout: DrawerLayout
     private lateinit var navigationView: NavigationView
+    private lateinit var actionBarToggle: ActionBarDrawerToggle
+    private lateinit var navView: NavigationView
 
+
+    private var mDrawerToggle : ActionBarDrawerToggle? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_page)
 
+        //navigation drawer 선언
         setSupportActionBar(findViewById(R.id.toolbar))
+        supportActionBar?.setDisplayHomeAsUpEnabled(true) // 드로어를 꺼낼 홈 버튼 활성화
+        supportActionBar?.setDisplayShowTitleEnabled(false) // 툴바에 타이틀 안보이게
 
-        supportActionBar?.setDisplayHomeAsUpEnabled(true) // 왼쪽 상단 버튼 만들기
         supportActionBar?.setHomeAsUpIndicator(R.drawable.menu) // 왼쪽 상단 버튼 아이콘 지정
-
         drawerLayout = findViewById(R.id.main_page)
         navigationView = findViewById(R.id.navigation_view)
-    }
 
+}
+
+    //navigation drawer
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            android.R.id.home -> { // 왼쪽 상단 버튼 눌렀을 때
-                drawerLayout.openDrawer(GravityCompat.START)
-                return true
+        when(item.itemId){
+            android.R.id.home->{ // 메뉴 버튼
+                drawerLayout.openDrawer(GravityCompat.START)    // 네비게이션 드로어 열기
             }
         }
         return super.onOptionsItemSelected(item)
     }
 
-    override fun onBackPressed() { // 뒤로가기 했을 때
-        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
-            drawerLayout.closeDrawer(GravityCompat.START)
-        } else {
-            super.onBackPressed()
-        }
-    }
 }
