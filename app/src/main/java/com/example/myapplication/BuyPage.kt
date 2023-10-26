@@ -35,8 +35,8 @@ class BuyPage : AppCompatActivity() {
     }
     //navigation drawer
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when(item.itemId){
-            android.R.id.home->{ // 메뉴 버튼
+        when (item.itemId) {
+            android.R.id.home -> { // 메뉴 버튼
                 drawerLayout.openDrawer(GravityCompat.START)    // 네비게이션 드로어 열기
             }
         }

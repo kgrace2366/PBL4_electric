@@ -55,395 +55,395 @@
             android:layout_height="wrap_content"
             android:background="#EAE7ED"
             android:orientation="vertical">
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <ImageView
-                android:id="@+id/signup_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginBottom="20dp"
-                android:src="@drawable/signup_strprofile"
-                app:layout_constraintBottom_toTopOf="@+id/textView"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:fontFamily="@font/kimm_bold"
-                android:text="Hi, User"
-                android:textColor="#1D0251"
-                android:textSize="25sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/signup_button" />
-
-            <ImageView
-                android:id="@+id/imageView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:src="@drawable/big_user_profile"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-
-            <TextView
-                android:id="@+id/account_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="107dp"
-                android:layout_marginTop="12dp"
-                android:layout_marginBottom="8dp"
-                android:fontFamily="@font/kimm_bold"
-                android:text="연동계좌:"
-                android:textColor="#9A9A9A"
-                android:textSize="15sp"
-                app:layout_constraintBottom_toTopOf="@+id/point_title"
-                app:layout_constraintEnd_toStartOf="@+id/account_num"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
-            <TextView
-                android:id="@+id/account_num"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="12dp"
-                android:layout_marginEnd="98dp"
-                android:fontFamily="@font/kimm_bold"
-                android:text="123-456-45445"
-                android:textColor="#9A9A9A"
-                android:textSize="15sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/account_title"
-                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
-            <TextView
-                android:id="@+id/point_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="8dp"
-                android:layout_marginBottom="40dp"
-                android:fontFamily="@font/kimm_bold"
-                android:text="포인트:"
-                android:textColor="#9A9A9A"
-                android:textSize="15sp"
-                app:layout_constraintBottom_toTopOf="@+id/date"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.432"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/account_num" />
-
-            <TextView
-                android:id="@+id/point_num"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentEnd="true"
-                android:layout_alignParentBottom="true"
-                android:layout_gravity="center"
-                android:layout_marginStart="7dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="155dp"
-                android:layout_marginBottom="40dp"
-                android:fontFamily="@font/kimm_bold"
-                android:text="303p"
-                android:textColor="#9A9A9A"
-                android:textSize="15sp"
-                app:layout_constraintBottom_toTopOf="@+id/date"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/point_title"
-                app:layout_constraintTop_toBottomOf="@+id/account_num" />
-
-            <TextView
-                android:id="@+id/date"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="40dp"
-                android:fontFamily="@font/kimm_bold"
-                android:text="2023.10.11"
-                android:textColor="#6B66FD"
-                android:textSize="15sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/point_num" />
-
-
-            <TextView
-                android:id="@+id/some_id13"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="34dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="276dp"
-
-                android:fontFamily="@font/kimm_bold"
-                android:gravity="center"
-                android:paddingRight="5dp"
-                android:paddingBottom="5dp"
-                android:text="@string/some_id3"
-                android:textColor="#1D0251"
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/date"></TextView>
-
-
-            <TextView
-                android:id="@+id/generation_quantity"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="35dp"
-                android:fontFamily="@font/kimm_bold"
-                android:text="300kWh"
-                android:textColor="#1D0251"
-                android:textSize="25sp"
-                app:layout_constraintBottom_toTopOf="@+id/line_1"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/some_id13" />
-
-            <ImageView
-                android:id="@+id/line_1"
-                android:layout_width="337dp"
-                android:layout_height="4dp"
-                android:layout_marginTop="35dp"
-                android:background="@drawable/line"
-                android:elevation="1dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/generation_quantity" />
-
-            <TextView
-                android:id="@+id/some_id4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="34dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="276dp"
-
-                android:fontFamily="@font/kimm_bold"
-                android:gravity="center"
-                android:paddingRight="5dp"
-                android:paddingBottom="5dp"
-                android:text="생산량"
-                android:textColor="#1D0251"
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/line_1"></TextView>
-
-            <TextView
-                android:id="@+id/new_quantity"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="35dp"
-                android:fontFamily="@font/kimm_bold"
-                android:text="300kWh"
-                android:textColor="#1D0251"
-                android:textSize="25sp"
-                app:layout_constraintBottom_toTopOf="@+id/line_2"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/some_id4" />
-
-            <ImageView
-                android:id="@+id/line_2"
-                android:layout_width="337dp"
-                android:layout_height="4dp"
-                android:layout_marginTop="35dp"
-                android:background="@drawable/line"
-                android:elevation="1dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/new_quantity" />
-
-
-            <TextView
-                android:id="@+id/some_id5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="34dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="276dp"
-
-                android:fontFamily="@font/kimm_bold"
-                android:gravity="center"
-                android:paddingRight="5dp"
-                android:paddingBottom="5dp"
-                android:text="소비량"
-                android:textColor="#1D0251"
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/line_2"></TextView>
-
-            <TextView
-                android:id="@+id/consume_quantity"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:fontFamily="@font/kimm_bold"
-                android:text="300kWh"
-                android:textColor="#1D0251"
-                android:textSize="25sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/some_id5" />
-
-            <ImageView
-                android:id="@+id/line_3"
-                android:layout_width="337dp"
-                android:layout_height="4dp"
-                android:layout_marginTop="35dp"
-                android:background="@drawable/line"
-                android:elevation="1dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/consume_quantity" />
-
-            <TextView
-                android:id="@+id/profile_trans_list"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginStart="45dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginEnd="276dp"
-                android:fontFamily="@font/kimm_bold"
-                android:text="전력거래현황"
-                android:textColor="#1D0251"
-                android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/line_3" />
-
-
-
-            <FrameLayout
-                android:id="@+id/buy_list_frame"
-                android:layout_width="114dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="37dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="260dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/profile_trans_list">
-
-
-                <ImageButton
-                    android:id="@+id/buy_list_button"
-                    android:layout_width="114dp"
-                    android:layout_height="50dp"
-                    android:background="#0CFFFFFF"
-                    android:backgroundTint="#FFFFFF"
-                    android:fontFamily="@font/kimm_bold"
-                    android:src="@drawable/purple_button"
-                    android:text="구매"
-                    android:textColor="#1D0251"
-                    android:textSize="18sp"
-                    tools:layout_editor_absoluteX="33dp"
-                    tools:layout_editor_absoluteY="502dp" />
-
-                <TextView
-                    android:id="@+id/buy_list_text"
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/signup_button"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:fontFamily="@font/kimm_bold"
-                    android:text="구매"
-                    android:textColor="#1D0251"
-                    android:textSize="18sp" />
-            </FrameLayout>
-            <FrameLayout
-                android:id="@+id/sell_list_frame"
-                android:layout_width="114dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginEnd="146dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/buy_list_frame"
-                app:layout_constraintTop_toBottomOf="@+id/profile_trans_list">
-
-                <ImageButton
-                    android:id="@+id/sell_list_button"
-                    android:layout_width="114dp"
-                    android:layout_height="match_parent"
-                    android:background="#0CFFFFFF"
-                    android:backgroundTint="#FFFFFF"
-                    android:fontFamily="@font/kimm_bold"
-                    android:src="@drawable/gray_button"
-                    android:text="판매"
-                    android:textColor="#1D0251"
-                    android:textSize="18sp"
-                    tools:layout_editor_absoluteX="150dp"
-                    tools:layout_editor_absoluteY="498dp" />
+                    android:layout_marginBottom="20dp"
+                    android:src="@drawable/signup_strprofile"
+                    app:layout_constraintBottom_toTopOf="@+id/textView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/sell_list_text"
+                    android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
                     android:fontFamily="@font/kimm_bold"
-                    android:text="판매"
+                    android:text="Hi, User"
                     android:textColor="#1D0251"
-                    android:textSize="18sp" />
-            </FrameLayout>
+                    android:textSize="25sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/signup_button" />
 
-            <FrameLayout
-                android:id="@+id/outstanding_list_frame"
-                android:layout_width="114dp"
-                android:layout_height="50dp"
-                android:layout_marginEnd="31dp"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/sell_list_frame"
-                app:layout_constraintTop_toTopOf="@+id/buy_list_frame">
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/big_user_profile"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-                <ImageButton
-                    android:id="@+id/outstanding_list_button"
-                    android:layout_width="114dp"
-                    android:layout_height="50dp"
-                    android:layout_marginEnd="31dp"
-                    android:background="#0CFFFFFF"
-                    android:backgroundTint="#FFFFFF"
+
+                <TextView
+                    android:id="@+id/account_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="107dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="8dp"
                     android:fontFamily="@font/kimm_bold"
-                    android:src="@drawable/gray_button"
-                    android:text="미체결"
+                    android:text="연동계좌:"
+                    android:textColor="#9A9A9A"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toTopOf="@+id/point_title"
+                    app:layout_constraintEnd_toStartOf="@+id/account_num"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+                <TextView
+                    android:id="@+id/account_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginEnd="98dp"
+                    android:fontFamily="@font/kimm_bold"
+                    android:text="123-456-45445"
+                    android:textColor="#9A9A9A"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/account_title"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+                <TextView
+                    android:id="@+id/point_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="40dp"
+                    android:fontFamily="@font/kimm_bold"
+                    android:text="포인트:"
+                    android:textColor="#9A9A9A"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toTopOf="@+id/date"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.432"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/account_num" />
+
+                <TextView
+                    android:id="@+id/point_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="7dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="155dp"
+                    android:layout_marginBottom="40dp"
+                    android:fontFamily="@font/kimm_bold"
+                    android:text="303p"
+                    android:textColor="#9A9A9A"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toTopOf="@+id/date"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/point_title"
+                    app:layout_constraintTop_toBottomOf="@+id/account_num" />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/kimm_bold"
+                    android:text="2023.10.11"
+                    android:textColor="#6B66FD"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/point_num" />
+
+
+                <TextView
+                    android:id="@+id/some_id13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="276dp"
+
+                    android:fontFamily="@font/kimm_bold"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="@string/some_id3"
                     android:textColor="#1D0251"
                     android:textSize="18sp"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toEndOf="@+id/sell_list_frame"
-                    app:layout_constraintTop_toTopOf="@+id/buy_list_frame" />
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/date"></TextView>
+
 
                 <TextView
-                    android:id="@+id/outstanding_list_text"
+                    android:id="@+id/generation_quantity"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="35dp"
                     android:fontFamily="@font/kimm_bold"
-                    android:text="미체결"
+                    android:text="300kWh"
                     android:textColor="#1D0251"
-                    android:textSize="18sp" />
-            </FrameLayout>
+                    android:textSize="25sp"
+                    app:layout_constraintBottom_toTopOf="@+id/line_1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/some_id13" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                <ImageView
+                    android:id="@+id/line_1"
+                    android:layout_width="337dp"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/line"
+                    android:elevation="1dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/generation_quantity" />
+
+                <TextView
+                    android:id="@+id/some_id4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="276dp"
+
+                    android:fontFamily="@font/kimm_bold"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="생산량"
+                    android:textColor="#1D0251"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line_1"></TextView>
+
+                <TextView
+                    android:id="@+id/new_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="35dp"
+                    android:fontFamily="@font/kimm_bold"
+                    android:text="300kWh"
+                    android:textColor="#1D0251"
+                    android:textSize="25sp"
+                    app:layout_constraintBottom_toTopOf="@+id/line_2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/some_id4" />
+
+                <ImageView
+                    android:id="@+id/line_2"
+                    android:layout_width="337dp"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/line"
+                    android:elevation="1dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/new_quantity" />
+
+
+                <TextView
+                    android:id="@+id/some_id5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="34dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="276dp"
+
+                    android:fontFamily="@font/kimm_bold"
+                    android:gravity="center"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="소비량"
+                    android:textColor="#1D0251"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line_2"></TextView>
+
+                <TextView
+                    android:id="@+id/consume_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/kimm_bold"
+                    android:text="300kWh"
+                    android:textColor="#1D0251"
+                    android:textSize="25sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/some_id5" />
+
+                <ImageView
+                    android:id="@+id/line_3"
+                    android:layout_width="337dp"
+                    android:layout_height="4dp"
+                    android:layout_marginTop="35dp"
+                    android:background="@drawable/line"
+                    android:elevation="1dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/consume_quantity" />
+
+                <TextView
+                    android:id="@+id/profile_trans_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="276dp"
+                    android:fontFamily="@font/kimm_bold"
+                    android:text="전력거래현황"
+                    android:textColor="#1D0251"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/line_3" />
+
+
+
+                <FrameLayout
+                    android:id="@+id/buy_list_frame"
+                    android:layout_width="114dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="37dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="260dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/profile_trans_list">
+
+
+                    <ImageButton
+                        android:id="@+id/buy_list_button"
+                        android:layout_width="114dp"
+                        android:layout_height="50dp"
+                        android:background="#0CFFFFFF"
+                        android:backgroundTint="#FFFFFF"
+                        android:fontFamily="@font/kimm_bold"
+                        android:src="@drawable/purple_button"
+                        android:text="구매"
+                        android:textColor="#1D0251"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="33dp"
+                        tools:layout_editor_absoluteY="502dp" />
+
+                    <TextView
+                        android:id="@+id/buy_list_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/kimm_bold"
+                        android:text="구매"
+                        android:textColor="#1D0251"
+                        android:textSize="18sp" />
+                </FrameLayout>
+                <FrameLayout
+                    android:id="@+id/sell_list_frame"
+                    android:layout_width="114dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="146dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/buy_list_frame"
+                    app:layout_constraintTop_toBottomOf="@+id/profile_trans_list">
+
+                    <ImageButton
+                        android:id="@+id/sell_list_button"
+                        android:layout_width="114dp"
+                        android:layout_height="match_parent"
+                        android:background="#0CFFFFFF"
+                        android:backgroundTint="#FFFFFF"
+                        android:fontFamily="@font/kimm_bold"
+                        android:src="@drawable/gray_button"
+                        android:text="판매"
+                        android:textColor="#1D0251"
+                        android:textSize="18sp"
+                        tools:layout_editor_absoluteX="150dp"
+                        tools:layout_editor_absoluteY="498dp" />
+
+                    <TextView
+                        android:id="@+id/sell_list_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/kimm_bold"
+                        android:text="판매"
+                        android:textColor="#1D0251"
+                        android:textSize="18sp" />
+                </FrameLayout>
+
+                <FrameLayout
+                    android:id="@+id/outstanding_list_frame"
+                    android:layout_width="114dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="31dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/sell_list_frame"
+                    app:layout_constraintTop_toTopOf="@+id/buy_list_frame">
+
+                    <ImageButton
+                        android:id="@+id/outstanding_list_button"
+                        android:layout_width="114dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="31dp"
+                        android:background="#0CFFFFFF"
+                        android:backgroundTint="#FFFFFF"
+                        android:fontFamily="@font/kimm_bold"
+                        android:src="@drawable/gray_button"
+                        android:text="미체결"
+                        android:textColor="#1D0251"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/sell_list_frame"
+                        app:layout_constraintTop_toTopOf="@+id/buy_list_frame" />
+
+                    <TextView
+                        android:id="@+id/outstanding_list_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:fontFamily="@font/kimm_bold"
+                        android:text="미체결"
+                        android:textColor="#1D0251"
+                        android:textSize="18sp" />
+                </FrameLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
             <FrameLayout
                 android:layout_width="344dp"
                 android:layout_height="60dp"

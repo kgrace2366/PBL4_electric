@@ -40,5 +40,11 @@ class SellPage : AppCompatActivity() {
             }
         }
         return super.onOptionsItemSelected(item)
+
+class SellPage : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_sell_page)
+
     }
-}
+}}}

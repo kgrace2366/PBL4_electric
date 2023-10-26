@@ -1,6 +1,7 @@
 package com.example.myapplication
 
 import android.os.Bundle
+
 import android.view.MenuItem
 import android.widget.Toolbar
 import androidx.appcompat.app.ActionBarDrawerToggle
@@ -14,6 +15,7 @@ import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import com.example.myapplication.databinding.ActivityProfilePage1Binding
 import com.google.android.material.navigation.NavigationView
+
 
 class Profile_Page1 : AppCompatActivity() {
 
@@ -53,6 +55,7 @@ class Profile_Page1 : AppCompatActivity() {
             }
         }
         return super.onOptionsItemSelected(item)
+    }
     }
 
 }

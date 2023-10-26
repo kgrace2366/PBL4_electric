@@ -36,894 +36,894 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         >
-    <ImageButton
-        android:id="@+id/menu_button"
-        android:visibility="invisible"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="272dp"
-        android:layout_marginBottom="13dp"
-        android:background="@null"
-        android:contentDescription="menu"
-        app:layout_constraintBottom_toTopOf="@+id/buy_list_text"
-        app:layout_constraintEnd_toStartOf="@+id/profile_button"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/menu"
-        tools:ignore="Smallsp" />
+        <ImageButton
+            android:id="@+id/menu_button"
+            android:visibility="invisible"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="272dp"
+            android:layout_marginBottom="13dp"
+            android:background="@null"
+            android:contentDescription="menu"
+            app:layout_constraintBottom_toTopOf="@+id/buy_list_text"
+            app:layout_constraintEnd_toStartOf="@+id/profile_button"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/menu"
+            tools:ignore="Smallsp" />
 
-    <ImageButton
-        android:id="@+id/profile_button"
-        android:layout_width="55dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="46dp"
-        android:background="@null"
-        android:contentDescription="mypage"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/user_profile" />
+        <ImageButton
+            android:id="@+id/profile_button"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="46dp"
+            android:background="@null"
+            android:contentDescription="mypage"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/user_profile" />
 
-    <TextView
-        android:id="@+id/buy_list_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="90dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="300dp"
-        android:layout_marginBottom="20dp"
-        android:fontFamily="@font/kimm_bold"
-        android:text="구매 가능 전력"
-        android:textColor="#1D0251"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menu_button" />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout2"
-        android:layout_width="344dp"
-        android:layout_height="900dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/buy_list_rectangle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buy_list_text">
-
-        <LinearLayout
+        <TextView
+            android:id="@+id/buy_list_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="15dp"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="300dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="@font/kimm_bold"
+            android:text="구매 가능 전력"
+            android:textColor="#1D0251"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toBottomOf="@+id/menu_button" />
 
-            <TextView
-                android:id="@+id/buy_list_menu_text"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/kimm_bold"
-                android:paddingLeft="10dp"
-                android:paddingRight="20dp"
-                android:text="구매 전력량"
-                android:textColor="#1D0251"
-                android:textSize="13sp" />
-
-            <TextView
-                android:id="@+id/buy_list_menu_text_2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/kimm_bold"
-                android:paddingRight="18dp"
-                android:text="전력요금"
-                android:textColor="#1D0251"
-                android:textSize="13sp" />
-
-            <TextView
-                android:id="@+id/buy_list_menu_text_3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/kimm_bold"
-                android:paddingRight="48dp"
-                android:text="시간"
-                android:textColor="#1D0251"
-                android:textSize="13sp" />
-
-            <TextView
-                android:id="@+id/buy_list_menu_text_4"
-                android:layout_width="119dp"
-                android:layout_height="wrap_content"
-                android:fontFamily="@font/kimm_bold"
-                android:paddingRight="20dp"
-                android:text="최근순"
-                android:textColor="#1D0251"
-                android:textSize="13sp" />
-        </LinearLayout>
-
-        <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="800dp"
-            android:fillViewport="true"
-            android:paddingTop="50dp"
-            android:scrollbars="none"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="344dp"
+            android:layout_height="900dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buy_list_rectangle"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toBottomOf="@+id/buy_list_text">
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="163dp">
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:background="@drawable/buy_item_rectangle"
-                    android:orientation="horizontal">
-
-                    <TextView
-                        android:id="@+id/buy_quantity_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="25dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="19.2kWh"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <TextView
-                        android:id="@+id/buy_rate_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="110dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="1789원"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <TextView
-                        android:id="@+id/buy_time_1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="180dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="7hours"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <Button
-                        android:id="@+id/buylist_buy_button_1"
-                        android:layout_width="50dp"
-                        android:layout_height="45dp"
-                        android:layout_gravity="center|right"
-                        android:layout_marginRight="30dp"
-                        android:layout_marginBottom="2dp"
-                        android:background="@drawable/buy_button"
-                        android:backgroundTint="#7174F1"
-                        android:fontFamily="@font/kimm_bold"
-                        android:padding="3dp"
-                        android:paddingLeft="0dp"
-                        android:text="구매"
-                        android:textColor="#FFFFFF"
-                        android:textSize="12sp" />
-
-                </FrameLayout>
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:background="@drawable/buy_item_rectangle">
-
-                    <TextView
-                        android:id="@+id/buy_quantity_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="25dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="19.2kWh"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <TextView
-                        android:id="@+id/buy_rate_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="110dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="1789원"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <TextView
-                        android:id="@+id/buy_time_2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="180dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="7hours"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <Button
-                        android:id="@+id/buylist_buy_button_2"
-                        android:layout_width="50dp"
-                        android:layout_height="45dp"
-                        android:layout_gravity="center|right"
-                        android:layout_marginRight="30dp"
-                        android:layout_marginBottom="2dp"
-                        android:background="@drawable/buy_button"
-                        android:backgroundTint="#7174F1"
-                        android:fontFamily="@font/kimm_bold"
-                        android:padding="3dp"
-                        android:paddingLeft="0dp"
-                        android:text="구매"
-                        android:textColor="#FFFFFF"
-                        android:textSize="12sp" />
-
-                </FrameLayout>
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:background="@drawable/buy_item_rectangle">
-
-                    <TextView
-                        android:id="@+id/buy_quantity_3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="25dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="19.2kWh"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <TextView
-                        android:id="@+id/buy_rate_3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="110dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="1789원"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <TextView
-                        android:id="@+id/buy_time_3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="180dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="7hours"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <Button
-                        android:id="@+id/buylist_buy_button_3"
-                        android:layout_width="50dp"
-                        android:layout_height="45dp"
-                        android:layout_gravity="center|right"
-                        android:layout_marginRight="30dp"
-                        android:layout_marginBottom="2dp"
-                        android:background="@drawable/buy_button"
-                        android:backgroundTint="#7174F1"
-                        android:fontFamily="@font/kimm_bold"
-                        android:padding="3dp"
-                        android:paddingLeft="0dp"
-                        android:text="구매"
-                        android:textColor="#FFFFFF"
-                        android:textSize="12sp" />
-
-                </FrameLayout>
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:background="@drawable/buy_item_rectangle">
-
-                    <TextView
-                        android:id="@+id/buy_quantity_4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="25dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="19.2kWh"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <TextView
-                        android:id="@+id/buy_rate_4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="110dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="1789원"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <TextView
-                        android:id="@+id/buy_time_4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="180dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="7hours"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <Button
-                        android:id="@+id/buylist_buy_button_4"
-                        android:layout_width="50dp"
-                        android:layout_height="45dp"
-                        android:layout_gravity="center|right"
-                        android:layout_marginRight="30dp"
-                        android:layout_marginBottom="2dp"
-                        android:background="@drawable/buy_button"
-                        android:backgroundTint="#7174F1"
-                        android:fontFamily="@font/kimm_bold"
-                        android:padding="3dp"
-                        android:paddingLeft="0dp"
-                        android:text="구매"
-                        android:textColor="#FFFFFF"
-                        android:textSize="12sp" />
-
-                </FrameLayout>
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:background="@drawable/buy_item_rectangle">
-
-                    <TextView
-                        android:id="@+id/buy_quantity_5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="25dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="19.2kWh"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <TextView
-                        android:id="@+id/buy_rate_5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="110dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="1789원"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <TextView
-                        android:id="@+id/buy_time_5"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="180dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="7hours"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <Button
-                        android:id="@+id/buylist_buy_button_5"
-                        android:layout_width="50dp"
-                        android:layout_height="45dp"
-                        android:layout_gravity="center|right"
-                        android:layout_marginRight="30dp"
-                        android:layout_marginBottom="2dp"
-                        android:background="@drawable/buy_button"
-                        android:backgroundTint="#7174F1"
-                        android:fontFamily="@font/kimm_bold"
-                        android:padding="3dp"
-                        android:paddingLeft="0dp"
-                        android:text="구매"
-                        android:textColor="#FFFFFF"
-                        android:textSize="12sp" />
-
-                </FrameLayout>
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:background="@drawable/buy_item_rectangle">
-
-                    <TextView
-                        android:id="@+id/buy_quantity_6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="25dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="19.2kWh"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <TextView
-                        android:id="@+id/buy_rate_6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="110dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="1789원"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <TextView
-                        android:id="@+id/buy_time_6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="180dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="7hours"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <Button
-                        android:id="@+id/buylist_buy_button_6"
-                        android:layout_width="50dp"
-                        android:layout_height="45dp"
-                        android:layout_gravity="center|right"
-                        android:layout_marginRight="30dp"
-                        android:layout_marginBottom="2dp"
-                        android:background="@drawable/buy_button"
-                        android:backgroundTint="#7174F1"
-                        android:fontFamily="@font/kimm_bold"
-                        android:padding="3dp"
-                        android:paddingLeft="0dp"
-                        android:text="구매"
-                        android:textColor="#FFFFFF"
-                        android:textSize="12sp" />
-
-                </FrameLayout>
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:background="@drawable/buy_item_rectangle">
-
-                    <TextView
-                        android:id="@+id/buy_quantity_7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="25dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="19.2kWh"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <TextView
-                        android:id="@+id/buy_rate_7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="110dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="1789원"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <TextView
-                        android:id="@+id/buy_time_7"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="180dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="7hours"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <Button
-                        android:id="@+id/buylist_buy_button_7"
-                        android:layout_width="50dp"
-                        android:layout_height="45dp"
-                        android:layout_gravity="center|right"
-                        android:layout_marginRight="30dp"
-                        android:layout_marginBottom="2dp"
-                        android:background="@drawable/buy_button"
-                        android:backgroundTint="#7174F1"
-                        android:fontFamily="@font/kimm_bold"
-                        android:padding="3dp"
-                        android:paddingLeft="0dp"
-                        android:text="구매"
-                        android:textColor="#FFFFFF"
-                        android:textSize="12sp" />
-
-                </FrameLayout>
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:background="@drawable/buy_item_rectangle">
-
-                    <TextView
-                        android:id="@+id/buy_quantity_8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="25dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="19.2kWh"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <TextView
-                        android:id="@+id/buy_rate_8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="110dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="1789원"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <TextView
-                        android:id="@+id/buy_time_8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="180dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="7hours"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <Button
-                        android:id="@+id/buylist_buy_button_8"
-                        android:layout_width="50dp"
-                        android:layout_height="45dp"
-                        android:layout_gravity="center|right"
-                        android:layout_marginRight="30dp"
-                        android:layout_marginBottom="2dp"
-                        android:background="@drawable/buy_button"
-                        android:backgroundTint="#7174F1"
-                        android:fontFamily="@font/kimm_bold"
-                        android:padding="3dp"
-                        android:paddingLeft="0dp"
-                        android:text="구매"
-                        android:textColor="#FFFFFF"
-                        android:textSize="12sp" />
-
-                </FrameLayout>
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:background="@drawable/buy_item_rectangle">
-
-                    <TextView
-                        android:id="@+id/buy_quantity_9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="25dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="19.2kWh"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <TextView
-                        android:id="@+id/buy_rate_9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="110dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="1789원"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <TextView
-                        android:id="@+id/buy_time_9"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="180dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="7hours"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <Button
-                        android:id="@+id/buylist_buy_button_9"
-                        android:layout_width="50dp"
-                        android:layout_height="45dp"
-                        android:layout_gravity="center|right"
-                        android:layout_marginRight="30dp"
-                        android:layout_marginBottom="2dp"
-                        android:background="@drawable/buy_button"
-                        android:backgroundTint="#7174F1"
-                        android:fontFamily="@font/kimm_bold"
-                        android:padding="3dp"
-                        android:paddingLeft="0dp"
-                        android:text="구매"
-                        android:textColor="#FFFFFF"
-                        android:textSize="12sp" />
-
-                </FrameLayout>
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:background="@drawable/buy_item_rectangle">
-
-                    <TextView
-                        android:id="@+id/buy_quantity_10"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="25dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="19.2kWh"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <TextView
-                        android:id="@+id/buy_rate_10"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="110dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="1789원"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <TextView
-                        android:id="@+id/buy_time_10"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="180dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="7hours"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <Button
-                        android:id="@+id/buylist_buy_button_10"
-                        android:layout_width="50dp"
-                        android:layout_height="45dp"
-                        android:layout_gravity="center|right"
-                        android:layout_marginRight="30dp"
-                        android:layout_marginBottom="2dp"
-                        android:background="@drawable/buy_button"
-                        android:backgroundTint="#7174F1"
-                        android:fontFamily="@font/kimm_bold"
-                        android:padding="3dp"
-                        android:paddingLeft="0dp"
-                        android:text="구매"
-                        android:textColor="#FFFFFF"
-                        android:textSize="12sp" />
-
-                </FrameLayout>
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:background="@drawable/buy_item_rectangle">
-
-                    <TextView
-                        android:id="@+id/buy_quantity_11"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="25dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="19.2kWh"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <TextView
-                        android:id="@+id/buy_rate_11"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="110dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="1789원"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <TextView
-                        android:id="@+id/buy_time_11"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="180dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="7hours"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <Button
-                        android:id="@+id/buylist_buy_button_11"
-                        android:layout_width="50dp"
-                        android:layout_height="45dp"
-                        android:layout_gravity="center|right"
-                        android:layout_marginRight="30dp"
-                        android:layout_marginBottom="2dp"
-                        android:background="@drawable/buy_button"
-                        android:backgroundTint="#7174F1"
-                        android:fontFamily="@font/kimm_bold"
-                        android:padding="3dp"
-                        android:paddingLeft="0dp"
-                        android:text="구매"
-                        android:textColor="#FFFFFF"
-                        android:textSize="12sp" />
-
-                </FrameLayout>
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:background="@drawable/buy_item_rectangle">
-
-                    <TextView
-                        android:id="@+id/buy_quantity_12"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="25dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="19.2kWh"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <TextView
-                        android:id="@+id/buy_rate_12"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="110dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="1789원"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <TextView
-                        android:id="@+id/buy_time_12"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="180dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="7hours"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <Button
-                        android:id="@+id/buylist_buy_button_12"
-                        android:layout_width="50dp"
-                        android:layout_height="45dp"
-                        android:layout_gravity="center|right"
-                        android:layout_marginRight="30dp"
-                        android:layout_marginBottom="2dp"
-                        android:background="@drawable/buy_button"
-                        android:backgroundTint="#7174F1"
-                        android:fontFamily="@font/kimm_bold"
-                        android:padding="3dp"
-                        android:paddingLeft="0dp"
-                        android:text="구매"
-                        android:textColor="#FFFFFF"
-                        android:textSize="12sp" />
-
-                </FrameLayout>
-
-                <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginRight="5dp"
-                    android:background="@drawable/buy_item_rectangle">
-
-                    <TextView
-                        android:id="@+id/buy_quantity_13"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="25dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="19.2kWh"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <TextView
-                        android:id="@+id/buy_rate_13"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="110dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="1789원"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <TextView
-                        android:id="@+id/buy_time_13"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center|left"
-                        android:layout_marginLeft="180dp"
-                        android:fontFamily="@font/kimm_bold"
-                        android:text="7hours"
-                        android:textColor="#1D0251"
-                        android:textSize="14sp"></TextView>
-
-                    <Button
-                        android:id="@+id/buylist_buy_button_13"
-                        android:layout_width="50dp"
-                        android:layout_height="45dp"
-                        android:layout_gravity="center|right"
-                        android:layout_marginRight="30dp"
-                        android:layout_marginBottom="2dp"
-                        android:background="@drawable/buy_button"
-                        android:backgroundTint="#7174F1"
-                        android:fontFamily="@font/kimm_bold"
-                        android:padding="3dp"
-                        android:paddingLeft="0dp"
-                        android:text="구매"
-                        android:textColor="#FFFFFF"
-                        android:textSize="12sp" />
-
-                </FrameLayout>
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/buy_list_menu_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/kimm_bold"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="20dp"
+                    android:text="구매 전력량"
+                    android:textColor="#1D0251"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/buy_list_menu_text_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/kimm_bold"
+                    android:paddingRight="18dp"
+                    android:text="전력요금"
+                    android:textColor="#1D0251"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/buy_list_menu_text_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/kimm_bold"
+                    android:paddingRight="48dp"
+                    android:text="시간"
+                    android:textColor="#1D0251"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/buy_list_menu_text_4"
+                    android:layout_width="119dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/kimm_bold"
+                    android:paddingRight="20dp"
+                    android:text="최근순"
+                    android:textColor="#1D0251"
+                    android:textSize="13sp" />
             </LinearLayout>
 
-        </ScrollView>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="800dp"
+                android:fillViewport="true"
+                android:paddingTop="50dp"
+                android:scrollbars="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:layout_editor_absoluteY="163dp">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/buy_item_rectangle"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/buy_quantity_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="25dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="19.2kWh"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/buy_rate_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="110dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="1789원"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/buy_time_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="180dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="7hours"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <Button
+                            android:id="@+id/buylist_buy_button_1"
+                            android:layout_width="50dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center|right"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/buy_button"
+                            android:backgroundTint="#7174F1"
+                            android:fontFamily="@font/kimm_bold"
+                            android:padding="3dp"
+                            android:paddingLeft="0dp"
+                            android:text="구매"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/buy_item_rectangle">
+
+                        <TextView
+                            android:id="@+id/buy_quantity_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="25dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="19.2kWh"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/buy_rate_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="110dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="1789원"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/buy_time_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="180dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="7hours"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <Button
+                            android:id="@+id/buylist_buy_button_2"
+                            android:layout_width="50dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center|right"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/buy_button"
+                            android:backgroundTint="#7174F1"
+                            android:fontFamily="@font/kimm_bold"
+                            android:padding="3dp"
+                            android:paddingLeft="0dp"
+                            android:text="구매"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/buy_item_rectangle">
+
+                        <TextView
+                            android:id="@+id/buy_quantity_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="25dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="19.2kWh"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/buy_rate_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="110dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="1789원"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/buy_time_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="180dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="7hours"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <Button
+                            android:id="@+id/buylist_buy_button_3"
+                            android:layout_width="50dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center|right"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/buy_button"
+                            android:backgroundTint="#7174F1"
+                            android:fontFamily="@font/kimm_bold"
+                            android:padding="3dp"
+                            android:paddingLeft="0dp"
+                            android:text="구매"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/buy_item_rectangle">
+
+                        <TextView
+                            android:id="@+id/buy_quantity_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="25dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="19.2kWh"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/buy_rate_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="110dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="1789원"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/buy_time_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="180dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="7hours"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <Button
+                            android:id="@+id/buylist_buy_button_4"
+                            android:layout_width="50dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center|right"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/buy_button"
+                            android:backgroundTint="#7174F1"
+                            android:fontFamily="@font/kimm_bold"
+                            android:padding="3dp"
+                            android:paddingLeft="0dp"
+                            android:text="구매"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/buy_item_rectangle">
+
+                        <TextView
+                            android:id="@+id/buy_quantity_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="25dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="19.2kWh"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/buy_rate_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="110dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="1789원"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/buy_time_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="180dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="7hours"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <Button
+                            android:id="@+id/buylist_buy_button_5"
+                            android:layout_width="50dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center|right"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/buy_button"
+                            android:backgroundTint="#7174F1"
+                            android:fontFamily="@font/kimm_bold"
+                            android:padding="3dp"
+                            android:paddingLeft="0dp"
+                            android:text="구매"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/buy_item_rectangle">
+
+                        <TextView
+                            android:id="@+id/buy_quantity_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="25dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="19.2kWh"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/buy_rate_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="110dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="1789원"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/buy_time_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="180dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="7hours"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <Button
+                            android:id="@+id/buylist_buy_button_6"
+                            android:layout_width="50dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center|right"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/buy_button"
+                            android:backgroundTint="#7174F1"
+                            android:fontFamily="@font/kimm_bold"
+                            android:padding="3dp"
+                            android:paddingLeft="0dp"
+                            android:text="구매"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/buy_item_rectangle">
+
+                        <TextView
+                            android:id="@+id/buy_quantity_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="25dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="19.2kWh"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/buy_rate_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="110dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="1789원"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/buy_time_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="180dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="7hours"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <Button
+                            android:id="@+id/buylist_buy_button_7"
+                            android:layout_width="50dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center|right"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/buy_button"
+                            android:backgroundTint="#7174F1"
+                            android:fontFamily="@font/kimm_bold"
+                            android:padding="3dp"
+                            android:paddingLeft="0dp"
+                            android:text="구매"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/buy_item_rectangle">
+
+                        <TextView
+                            android:id="@+id/buy_quantity_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="25dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="19.2kWh"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/buy_rate_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="110dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="1789원"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/buy_time_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="180dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="7hours"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <Button
+                            android:id="@+id/buylist_buy_button_8"
+                            android:layout_width="50dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center|right"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/buy_button"
+                            android:backgroundTint="#7174F1"
+                            android:fontFamily="@font/kimm_bold"
+                            android:padding="3dp"
+                            android:paddingLeft="0dp"
+                            android:text="구매"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/buy_item_rectangle">
+
+                        <TextView
+                            android:id="@+id/buy_quantity_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="25dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="19.2kWh"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/buy_rate_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="110dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="1789원"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/buy_time_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="180dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="7hours"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <Button
+                            android:id="@+id/buylist_buy_button_9"
+                            android:layout_width="50dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center|right"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/buy_button"
+                            android:backgroundTint="#7174F1"
+                            android:fontFamily="@font/kimm_bold"
+                            android:padding="3dp"
+                            android:paddingLeft="0dp"
+                            android:text="구매"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/buy_item_rectangle">
+
+                        <TextView
+                            android:id="@+id/buy_quantity_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="25dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="19.2kWh"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/buy_rate_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="110dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="1789원"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/buy_time_10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="180dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="7hours"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <Button
+                            android:id="@+id/buylist_buy_button_10"
+                            android:layout_width="50dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center|right"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/buy_button"
+                            android:backgroundTint="#7174F1"
+                            android:fontFamily="@font/kimm_bold"
+                            android:padding="3dp"
+                            android:paddingLeft="0dp"
+                            android:text="구매"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/buy_item_rectangle">
+
+                        <TextView
+                            android:id="@+id/buy_quantity_11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="25dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="19.2kWh"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/buy_rate_11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="110dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="1789원"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/buy_time_11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="180dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="7hours"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <Button
+                            android:id="@+id/buylist_buy_button_11"
+                            android:layout_width="50dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center|right"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/buy_button"
+                            android:backgroundTint="#7174F1"
+                            android:fontFamily="@font/kimm_bold"
+                            android:padding="3dp"
+                            android:paddingLeft="0dp"
+                            android:text="구매"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/buy_item_rectangle">
+
+                        <TextView
+                            android:id="@+id/buy_quantity_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="25dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="19.2kWh"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/buy_rate_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="110dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="1789원"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/buy_time_12"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="180dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="7hours"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <Button
+                            android:id="@+id/buylist_buy_button_12"
+                            android:layout_width="50dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center|right"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/buy_button"
+                            android:backgroundTint="#7174F1"
+                            android:fontFamily="@font/kimm_bold"
+                            android:padding="3dp"
+                            android:paddingLeft="0dp"
+                            android:text="구매"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/buy_item_rectangle">
+
+                        <TextView
+                            android:id="@+id/buy_quantity_13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="25dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="19.2kWh"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/buy_rate_13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="110dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="1789원"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <TextView
+                            android:id="@+id/buy_time_13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginLeft="180dp"
+                            android:fontFamily="@font/kimm_bold"
+                            android:text="7hours"
+                            android:textColor="#1D0251"
+                            android:textSize="14sp"></TextView>
+
+                        <Button
+                            android:id="@+id/buylist_buy_button_13"
+                            android:layout_width="50dp"
+                            android:layout_height="45dp"
+                            android:layout_gravity="center|right"
+                            android:layout_marginRight="30dp"
+                            android:layout_marginBottom="2dp"
+                            android:background="@drawable/buy_button"
+                            android:backgroundTint="#7174F1"
+                            android:fontFamily="@font/kimm_bold"
+                            android:padding="3dp"
+                            android:paddingLeft="0dp"
+                            android:text="구매"
+                            android:textColor="#FFFFFF"
+                            android:textSize="12sp" />
+
+                    </FrameLayout>
+                </LinearLayout>
+
+            </ScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.drawerlayout.widget.DrawerLayout>

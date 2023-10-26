@@ -37,282 +37,282 @@
         android:layout_height="match_parent"
         >
 
-    <ImageButton
-        android:id="@+id/menu_button"
-        android:layout_width="50dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="25dp"
-        android:layout_marginEnd="272dp"
-        android:layout_marginBottom="13dp"
-        android:background="@null"
-        android:contentDescription="menu"
-        app:layout_constraintBottom_toTopOf="@+id/hi_text"
-        app:layout_constraintEnd_toStartOf="@+id/profile_button"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/menu"
-        tools:ignore="Smallsp" />
+        <ImageButton
+            android:id="@+id/menu_button"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="272dp"
+            android:layout_marginBottom="13dp"
+            android:background="@null"
+            android:contentDescription="menu"
+            app:layout_constraintBottom_toTopOf="@+id/hi_text"
+            app:layout_constraintEnd_toStartOf="@+id/profile_button"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/menu"
+            tools:ignore="Smallsp" />
 
-    <ImageButton
-        android:id="@+id/profile_button"
-        android:layout_width="55dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="46dp"
-        android:background="@null"
-        android:contentDescription="mypage"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/user_profile" />
-
-    <TextView
-        android:id="@+id/hi_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="34dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="300dp"
-        android:layout_marginBottom="20dp"
-        android:fontFamily="@font/kimm_bold"
-        android:text="전력 판매"
-        android:textColor="#1D0251"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/menu_button" />
-
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constraintLayout2"
-        android:layout_width="344dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/rectangle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/hi_text">
-
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_marginEnd="48dp"
-            android:src="@drawable/electric_icon"
-            app:layout_constraintBottom_toBottomOf="parent"
+        <ImageButton
+            android:id="@+id/profile_button"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="46dp"
+            android:background="@null"
+            android:contentDescription="mypage"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            app:srcCompat="@drawable/user_profile" />
 
         <TextView
-            android:id="@+id/day"
+            android:id="@+id/hi_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="300dp"
+            android:layout_marginBottom="20dp"
             android:fontFamily="@font/kimm_bold"
-            android:text="2023.09.23"
+            android:text="전력 판매"
             android:textColor="#1D0251"
-            android:textSize="13sp"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout2"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@+id/menu_button" />
 
-        <TextView
-            android:id="@+id/power_cost"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="28dp"
-            android:layout_marginTop="13dp"
-            android:layout_marginBottom="28dp"
-            android:fontFamily="@font/kimm_bold"
-            android:text="155"
-            android:textColor="#1D0251"
-            android:textSize="22sp"
-            app:layout_constraintBottom_toBottomOf="parent"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout2"
+            android:layout_width="344dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rectangle"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/day" />
+            app:layout_constraintTop_toBottomOf="@+id/hi_text">
 
-        <TextView
-            android:id="@+id/power_cost_unit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"
-            android:layout_marginEnd="88dp"
-            android:layout_marginBottom="29dp"
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_marginEnd="48dp"
+                android:src="@drawable/electric_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="35dp"
+                android:fontFamily="@font/kimm_bold"
+                android:text="2023.09.23"
+                android:textColor="#1D0251"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/power_cost"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="28dp"
+                android:fontFamily="@font/kimm_bold"
+                android:text="155"
+                android:textColor="#1D0251"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/day" />
+
+            <TextView
+                android:id="@+id/power_cost_unit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="88dp"
+                android:layout_marginBottom="29dp"
+                android:fontFamily="@font/kimm_bold"
+                android:text="원/kWh"
+                android:textColor="#1D0251"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView"
+                app:layout_constraintStart_toEndOf="@+id/power_cost"
+                app:layout_constraintTop_toBottomOf="@+id/day" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:id="@+id/linearLayout3"
+            android:layout_width="344dp"
+            android:layout_height="450dp"
+            android:layout_marginStart="34dp"
+            android:layout_marginEnd="45dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+
+            <TextView
+                android:id="@+id/generation_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/kimm_bold"
+                android:text="잔여 발전량"
+                android:textColor="#1D0251"
+                android:textSize="17sp" />
+
+            <FrameLayout
+                android:layout_width="305dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:id="@+id/generation_quantity"
+                    android:layout_width="305dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/input_button"
+                    android:fontFamily="@font/kimm_bold"
+                    android:gravity="center"
+                    android:text="234kWh"
+                    android:textColor="#1D0251"
+                    android:textSize="17sp"></TextView>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/sell_quantity_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/kimm_bold"
+                android:text="판매할 전력"
+                android:textColor="#1D0251"
+                android:textSize="17sp" />
+
+            <FrameLayout
+                android:layout_width="305dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <EditText
+                    android:id="@+id/sell_quantity_input"
+                    android:layout_width="305dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/input_button"
+                    android:fontFamily="@font/kimm_bold"
+                    android:gravity="center"
+                    android:hint="kWh"
+                    android:inputType="number"
+                    android:textColor="#1D0251"
+                    android:textSize="17sp"></EditText>
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/power_cost_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/kimm_bold"
+                android:text="1kWh당 가격"
+                android:textColor="#1D0251"
+                android:textSize="17sp" />
+
+            <FrameLayout
+                android:layout_width="305dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:id="@+id/power_cost_2"
+                    android:layout_width="305dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/input_button"
+                    android:fontFamily="@font/kimm_bold"
+                    android:gravity="center"
+                    android:text="155"
+                    android:textColor="#1D0251"
+                    android:textSize="17sp"></TextView>
+
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/plus"
+                    android:background="@null"
+                    android:layout_gravity="left|center"
+                    android:layout_marginLeft="20dp"/>
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/minus"
+                    android:background="@null"
+                    android:layout_gravity="right|center"
+                    android:layout_marginRight="20dp"/>
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/total_power_cost_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/kimm_bold"
+                android:text="총 판매 가격"
+                android:textColor="#1D0251"
+                android:textSize="17sp" />
+
+            <FrameLayout
+                android:layout_width="305dp"
+                android:layout_height="45dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+
+                <TextView
+                    android:id="@+id/total_power_cost"
+                    android:layout_width="305dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/input_button"
+                    android:fontFamily="@font/kimm_bold"
+                    android:gravity="center"
+                    android:text="155"
+                    android:textColor="#1D0251"
+                    android:textSize="17sp"></TextView>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="240dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="55dp"
             android:fontFamily="@font/kimm_bold"
-            android:text="원/kWh"
-            android:textColor="#1D0251"
-            android:textSize="22sp"
+            android:text="판매"
+            android:textColor="@color/white"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/imageView"
-            app:layout_constraintStart_toEndOf="@+id/power_cost"
-            app:layout_constraintTop_toBottomOf="@+id/day" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="344dp"
-        android:layout_height="450dp"
-        android:layout_marginStart="34dp"
-        android:layout_marginEnd="45dp"
-        android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
-
-        <TextView
-            android:id="@+id/generation_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:fontFamily="@font/kimm_bold"
-            android:text="잔여 발전량"
-            android:textColor="#1D0251"
-            android:textSize="17sp" />
-
-        <FrameLayout
-            android:layout_width="305dp"
-            android:layout_height="45dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp">
-
-            <TextView
-                android:id="@+id/generation_quantity"
-                android:layout_width="305dp"
-                android:layout_height="45dp"
-                android:background="@drawable/input_button"
-                android:fontFamily="@font/kimm_bold"
-                android:gravity="center"
-                android:text="234kWh"
-                android:textColor="#1D0251"
-                android:textSize="17sp"></TextView>
-
-        </FrameLayout>
-
-        <TextView
-            android:id="@+id/sell_quantity_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:fontFamily="@font/kimm_bold"
-            android:text="판매할 전력"
-            android:textColor="#1D0251"
-            android:textSize="17sp" />
-
-        <FrameLayout
-            android:layout_width="305dp"
-            android:layout_height="45dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp">
-
-            <EditText
-                android:id="@+id/sell_quantity_input"
-                android:layout_width="305dp"
-                android:layout_height="45dp"
-                android:background="@drawable/input_button"
-                android:fontFamily="@font/kimm_bold"
-                android:gravity="center"
-                android:hint="kWh"
-                android:inputType="number"
-                android:textColor="#1D0251"
-                android:textSize="17sp"></EditText>
-
-        </FrameLayout>
-
-        <TextView
-            android:id="@+id/power_cost_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:fontFamily="@font/kimm_bold"
-            android:text="1kWh당 가격"
-            android:textColor="#1D0251"
-            android:textSize="17sp" />
-
-        <FrameLayout
-            android:layout_width="305dp"
-            android:layout_height="45dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp">
-
-            <TextView
-                android:id="@+id/power_cost_2"
-                android:layout_width="305dp"
-                android:layout_height="45dp"
-                android:background="@drawable/input_button"
-                android:fontFamily="@font/kimm_bold"
-                android:gravity="center"
-                android:text="155"
-                android:textColor="#1D0251"
-                android:textSize="17sp"></TextView>
-
-            <ImageButton
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                app:srcCompat="@drawable/plus"
-                android:background="@null"
-                android:layout_gravity="left|center"
-                android:layout_marginLeft="20dp"/>
-            <ImageButton
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                app:srcCompat="@drawable/minus"
-                android:background="@null"
-                android:layout_gravity="right|center"
-                android:layout_marginRight="20dp"/>
-        </FrameLayout>
-
-        <TextView
-            android:id="@+id/total_power_cost_text"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:fontFamily="@font/kimm_bold"
-            android:text="총 판매 가격"
-            android:textColor="#1D0251"
-            android:textSize="17sp" />
-
-        <FrameLayout
-            android:layout_width="305dp"
-            android:layout_height="45dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp">
-
-            <TextView
-                android:id="@+id/total_power_cost"
-                android:layout_width="305dp"
-                android:layout_height="45dp"
-                android:background="@drawable/input_button"
-                android:fontFamily="@font/kimm_bold"
-                android:gravity="center"
-                android:text="155"
-                android:textColor="#1D0251"
-                android:textSize="17sp"></TextView>
-
-        </FrameLayout>
-
-    </LinearLayout>
-
-    <Button
-        android:layout_width="240dp"
-        android:layout_height="45dp"
-        android:layout_marginTop="5dp"
-        android:layout_marginBottom="55dp"
-        android:fontFamily="@font/kimm_bold"
-        android:text="판매"
-        android:textColor="@color/white"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
-
-
-</androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.drawerlayout.widget.DrawerLayout>

@@ -76,9 +76,12 @@
         <item name="android:background">@null</item>
     </style>
 
+<<<<<<< HEAD
 <!--    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">-->
 <!--        <item name="windowActionBar">true</item>-->
 <!--        <item name="windowNoTitle">true</item>-->
 <!--    </style>-->
+=======
+>>>>>>> d76f8782c50e4bd676499162d4cace1b3a14ef91
 
 </resources>
