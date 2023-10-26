@@ -58,4 +58,3 @@ class Profile_Page1 : AppCompatActivity() {
     }
     }
 
-}
