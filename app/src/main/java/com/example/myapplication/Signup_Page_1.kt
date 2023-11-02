@@ -20,12 +20,20 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.ktx.database
 import com.google.firebase.ktx.Firebase
 
+import android.app.Activity
+import android.net.Uri
+import android.webkit.WebSettings
+import android.webkit.WebView
+import android.webkit.WebViewClient
+import android.widget.Button
+
 
 class Signup_Page_1 : AppCompatActivity() {
 
     private lateinit var binding: ActivitySignupPage1Binding
     private lateinit var database: DatabaseReference
     private lateinit var appBarConfiguration: AppBarConfiguration
+    private lateinit var webView: WebView
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,7 +41,18 @@ class Signup_Page_1 : AppCompatActivity() {
         binding = ActivitySignupPage1Binding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        webView = findViewById(R.id.webview)
 
+        // JavaScript 활성화
+        val webSettings: WebSettings = webView.settings
+        webSettings.javaScriptEnabled = true
+
+        // WebViewClient 설정
+        webView.webViewClient = WebViewClient()
+
+        // 웹 페이지 로드 (서버의 주소를 사용)
+        val serverIP = "192.168.56.1"
+        webView.loadUrl("http://192.168.56.1:3001/address")
 
         binding.loginButton.setOnClickListener {
             val email = binding.idEditText.text.toString() // email 변수의 값을 'emailEditText' id를 가진 텍스트 박스에 입력 된 문자열로 받아옴
